@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h1>TIP CALCULATOR</h1>
+
+    <form action="{% url 'calculator:results' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+
+        <input type="submit" value="Calculate Tip">
+    </form>
+</body>
+</html>
