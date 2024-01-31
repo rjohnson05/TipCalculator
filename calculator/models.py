@@ -2,7 +2,9 @@ from django import forms
 
 
 """
-This class is used to collect and store the necessary data for tip calculations.
+This class contains the Tip From, which collects and stores the necessary data for tip calculations.
+
+Author: Ryan Johnson
 """
 class TipForm(forms.Form):
     billing_amount = forms.IntegerField(min_value=0, label="Billing Amount")

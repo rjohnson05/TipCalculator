@@ -2,6 +2,12 @@ from django.shortcuts import render
 
 from calculator.models import TipForm
 
+"""
+Contains the views for the calculator app, rendering the HTML templates the user sees.
+
+Author: Ryan Johnson
+"""
+
 
 def index(request):
     """
